@@ -105,8 +105,8 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
     background-color: #279c79;
-            transform: scale(0.97);
-            transition: transform 0.3 ease;
+    transform: scale(0.97);
+    transition: transform 0.3 ease;
 }
 /* TABLE */
 table {
@@ -146,4 +146,54 @@ li a:hover {
 }
 table,caption,th,td {
     border:1px solid #000;
+}
+/* GALLERY STYLES */
+ul#album {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+#photo {
+    position: relative;
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f4fcf9;
+    transition: transform 0.3s ease;
+}
+#photo:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+#photo img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+.caption {
+    font-weight: bold;
+    color: #279c79;
+    margin-top: 8px;
+}
+.description {
+    position: absolute;
+    top: 200px;
+    left: 219px;
+    width: 200px;
+    background-color: rgba(39, 156, 121, 0.5); 
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    visibility: hidden;
+    border-radius: 5px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+#photo:hover .description {
+    visibility: visible;
 }

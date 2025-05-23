@@ -30,12 +30,12 @@
          </div>
          <!-- End of Container-->
           <script>
-        var fileNames = [];         // file names like pet1, pet2...
-        var photos = [];            // image elements
-        var imageList = [];         // final <li> blocks
-        var captions = [
-            "Bella", "Max", "Luna", "Charlie", "Milo",
-            "Lucy", "Rocky", "Daisy", "Buddy", "Chloe"
+            var fileNames = [];         // file names like pet1, pet2...
+            var photos = [];            // image elements
+            var imageList = [];         // final <li> blocks
+            var captions = [
+                "Bella", "Max", "Luna", "Charlie", "Milo",
+                "Lucy", "Rocky", "Daisy", "Buddy", "Chloe"
         ];
         var descriptions = [
             "Loves to cuddle and play.",
@@ -49,11 +49,9 @@
             "Loves to nap in the sun.",
             "Small but very brave."
         ];
-
         var image;
         var openList;
         var closeList = "</li>";
-
         for (var i = 0; i < 10; i++) {
             fileNames.push("pet" + (i + 1)); // pet1, pet2, etc.
             photos.push("<img src='images/" + fileNames[i] + ".jpg' alt='" + captions[i] + "'>");
@@ -63,7 +61,6 @@
             image = openList + photos[i] + caption + description + closeList;
             imageList.push(image);
         }
-
         document.getElementById("album").innerHTML = imageList.join('');
     </script>
     </body>
