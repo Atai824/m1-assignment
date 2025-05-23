@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pet Adoption Center</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <!-- Container to wrap everything -->
+         <div id="container">
+            <!-- Website brand -->
+            <h1>Welcome to Westcliff Pet Adoption Center</h1>
+            <!-- What we do -->
+            <header>We Help Pets Find Loving Homes</header>
+            <nav>
+                <ul>
+                    <li><a href="1index.html">Home</a></li>
+                    <li><a href="2about.html">About</a></li>
+                    <li><a href="3contact.html">Contact</a></li>
+                    <li><a href="4gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <h1>Contact Us</h1>
+            <p>Leave your contact information</p>
+                            <form action="/signup" method="post">
+                    <fieldset>
+                        <legend>Customer's Personal Information</legend>
+                        <label>Enter your full name</label>
+                        <input type="text" name="name">
+                        <br>
+                        <label>Enter your email</label>
+                        <input type="email" name="email">
+                        <label>Enter your phone number</label>
+                        <input type="text" name="phone">
+                        <br>
+                        <label>Select your gender</label>
+                        <input type="radio" name="gender" value="male">male
+                        <input type="radio" name="gender" value="female">female<br>
+                        <label> How should we contact you?</label><br>
+                        <select>
+                            <option>Email</option>
+                            <option>Phone</option>
+                        </select><br>
+                        <br>
+                        <label>Tell us where did you hear about our center:</label><br>
+                        <textarea rows="6 colums=30"></textarea><br>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            <footer>&copy; Copyright 2025</footer>
+         </div>
+         <!-- End of Container-->
+    </body>
+</html>
