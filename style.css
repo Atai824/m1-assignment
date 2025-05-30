@@ -1,6 +1,6 @@
 /* CONTAINER */
 #container {
-    max-width: noe;
+    max-width: none;
     margin: 0 auto;
     padding: 0 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -182,9 +182,9 @@ ul#album {
 }
 .description {
     position: absolute;
-    top: 200px;
-    left: 219px;
-    width: 200px;
+    top: 50%;
+    left: 50%;
+    width: 80%;
     background-color: rgba(39, 156, 121, 0.5); 
     color: #fff;
     padding: 10px;
@@ -196,4 +196,42 @@ ul#album {
 }
 #photo:hover .description {
     visibility: visible;
+}
+#infoBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.88);
+    color: #fff;
+    border-radius: 10px;
+    text-align: left;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    z-index: 999;
+    transition: visibility 0.3s, opacity 0.3s ease;
+    opacity: 0;
+}
+#infoBox.show {
+    visibility: visible;
+    opacity: 1;
+}
+#infoHeading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+}
+#infoText {
+    font-size: #ffff66;
+    line-height: 1.4;
+}
+#closeLink {
+    color: #279c79;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+    display: block;
 }
