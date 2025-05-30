@@ -24,11 +24,23 @@
             </nav>
             <h2>Our Pets</h2>
             <main>
-                <ul id="album"></ul>
+                <h3>Click on a pet to learn more!</h3>
+                <p>
+                    Our furry friends are waiting for a loving home. Hover to see more about each pet.
+                </p>
+                <ul id="album">
+                    <div id="infoBox">
+                        <div id="infoHeading"></div>
+                        <div id="infoText"></div>
+                        <div id="closeLink">Click to close</div>
+                    </div>
+                </ul>
             </main>
             <footer>&copy; Copyright 2025</footer>
          </div>
          <!-- End of Container-->
+
+          <!-- JS code -->
           <script>
             var fileNames = [];         // file names like pet1, pet2...
             var photos = [];            // image elements
@@ -62,6 +74,25 @@
             imageList.push(image);
         }
         document.getElementById("album").innerHTML = imageList.join('');
+
+        // Description by click
+        document.addEventListener("DOMContentLoaded", function () {
+            var photoElements = document.querySelectorAll("#photo");
+            var infobox = document.getElementById("infoBox");
+            var heading = document.getElementById("infoHeading");
+            var text = document.getElementById("infoText");
+            var closeLink = document.getElementById("closeLink");
+            photoElements.forEach(function (photo, index) {
+                photo.addEventListener("click", function () {
+                    heading.innerText = captions[index];
+                    text.innerText = descriptions[index];
+                    infoBox.style.visibility = "visible";
+                });
+            });
+            closeLink.addEventListener("click", function () {
+                infoBox.style.visibility = "hidden";
+            });
+        });
     </script>
     </body>
 </html>
