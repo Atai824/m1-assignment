@@ -235,3 +235,42 @@ ul#album {
     cursor: pointer;
     display: block;
 }
+/* image appearing code */
+.backdrop {
+    z-index: 1;
+    opacity: 0;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+.box {
+    z-index: 2;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #444;
+    width: 600px;
+    height: auto;
+}
+.box img {
+    width: 100%;
+}
+.close {
+    float: right;
+    cursor: pointer;
+}
+#gallery #photo a img {
+    width: 400px;
+}
+.box img {
+    width:100%;
+}
