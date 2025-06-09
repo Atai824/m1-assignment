@@ -274,9 +274,6 @@ ul#album {
 .box img {
     width:100%;
 }
-#phoneField {
-    display: none;
-}
-#emailField {
+#phoneField, #emailField {
     display: none;
 }

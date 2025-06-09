@@ -38,18 +38,21 @@
                         <input type="radio" name="gender" value="male">male
                         <input type="radio" name="gender" value="female">female<br>
                         <label> How should we contact you?</label><br>
-                        <select id="contactmethod">
+                        <select id="contactMethod">
                             <option value="">Select One</option>
                             <option value="email">Email</option>
                             <option value="phone">Phone</option>
                         </select><br>
                         <br>
                         <!-- To show fields-->
-                         <div id="phoneField" style="display: none;">
+                         <div id="phoneField">
                             <label>Enter your phone number</label>
                             <input type="text" name="phone"><br>
                          </div>
-                         <div id="emailField" 
+                         <div id="emailField">
+                            <label>Enter your email</label>
+                            <input type="email" name="email"><br>
+                         </div>
                         <label>Tell us where did you hear about our center:</label><br>
                         <textarea rows="6 colums=30"></textarea><br>
                         <input type="submit" value="Submit">
@@ -58,5 +61,6 @@
             <footer>&copy; Copyright 2025</footer>
          </div>
          <!-- End of Container-->
+          <script src="contact.js"></script>
     </body>
 </html>
