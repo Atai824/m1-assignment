@@ -274,3 +274,9 @@ ul#album {
 .box img {
     width:100%;
 }
+#phoneField {
+    display: none;
+}
+#emailField {
+    display: none;
+}
